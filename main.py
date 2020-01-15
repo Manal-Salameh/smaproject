@@ -19,7 +19,7 @@ from sklearn.neighbors import KNeighborsClassifier
 print("test")
 pd.set_option("display.max_colwidth", 200)
 warnings.filterwarnings("ignore")
-
+print("hello world")
 # Read Data
 data = pd.read_csv("dataa.csv", delimiter=',', encoding='latin-1')
 
