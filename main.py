@@ -26,6 +26,9 @@ data = pd.read_csv("dataa.csv", delimiter=',', encoding='latin-1')
 # Delet not needed columns
 data.drop(['ids','date','flag','user'],axis = 1,inplace = True)
 
+# Take only 40% of the data
+data = data.sample(frac=0.4)
+
 # Dividing data into positive and negative
 positive_data = data[data.target==4].iloc[:,:]
 negative_data = data[data.target==0].iloc[:,:]
